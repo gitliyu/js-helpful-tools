@@ -2,13 +2,13 @@
 
 自己收集的一些js工具方法, 会在以后不断地补充和优化, 现有的使用方法如下(待优化)
 
-1.直接引入
+1.直接调用
 ```javascript
 import tools from 'js-helpful-tools'
 
 console.log(tools.isObject({}));   // true
 ```
-2.注册为全局方法,调用`register`方法后会将所有工具函数注册在`window`对象上
+2.注册为全局方法, 调用`register`方法后会将所有工具函数注册在`window`对象上
 ```javascript
 import tools from 'js-helpful-tools'
 
@@ -19,7 +19,7 @@ console.log(isObject({}));   // true
 ```javascript
 import tools from 'js-helpful-tools'
 
-Vue.tools();
+Vue.use(tools);
 
 // 组件内部调用
 console.log(this.isObject({}));  // true
