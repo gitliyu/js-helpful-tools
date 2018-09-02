@@ -1,0 +1,11 @@
+{
+  "name": "js-helpful-tools",
+  "version": "1.0.0",
+  "description": "some js heplful tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1042625709@qq.com",
+  "license": "ISC"
+}
