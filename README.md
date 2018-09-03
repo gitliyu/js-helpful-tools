@@ -1,21 +1,27 @@
 # js-helpful-tools
 
-自己收集的一些js工具方法, 会在以后不断地补充和优化, 现有的使用方法如下(待优化)
+自己收集的一些js工具方法, 会在以后不断地补充和优化,
 
-1.直接调用
+安装
+```
+npm install js-helpful-tools
+```
+
+现有的使用方法如下(待优化)
+1. 直接调用
 ```javascript
 import { isObject } from 'js-helpful-tools'
 
 console.log(isObject({}));   // true
 ```
-2.注册为全局方法, 调用`register`方法后会将所有工具函数注册在`window`对象上
+2. 注册为全局方法, 调用`register`方法后会将所有工具函数注册在`window`对象上
 ```javascript
 import { register } from 'js-helpful-tools'
 
 register();
 console.log(isObject({}));   // true
 ```
-3.注册在Vue对象上
+3. 注册在Vue对象上
 ```javascript
 import tools from 'js-helpful-tools'
 
