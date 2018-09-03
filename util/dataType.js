@@ -25,7 +25,7 @@ function isEmptyObject (obj) {
   return isObject(obj) ? JSON.stringify(obj) === '{}' : false;
 }
 
-export default {
+export {
   isObject,
   isPlainObject,
   isEmptyObject

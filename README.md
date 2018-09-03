@@ -4,15 +4,15 @@
 
 1.直接调用
 ```javascript
-import tools from 'js-helpful-tools'
+import { isObject } from 'js-helpful-tools'
 
-console.log(tools.isObject({}));   // true
+console.log(isObject({}));   // true
 ```
 2.注册为全局方法, 调用`register`方法后会将所有工具函数注册在`window`对象上
 ```javascript
-import tools from 'js-helpful-tools'
+import { register } from 'js-helpful-tools'
 
-tools.register();
+register();
 console.log(isObject({}));   // true
 ```
 3.注册在Vue对象上

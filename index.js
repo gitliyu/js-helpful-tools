@@ -1,29 +1,63 @@
-import calculate from './util/calculate'
-import dataType from './util/dataType'
-import device from './util/device'
-import random from './util/random'
+import {
+  floatAdd,
+  floatSub,
+  floatMul,
+  floatDiv
+} from './util/calculate'
+import {
+  isObject,
+  isPlainObject,
+  isEmptyObject
+} from './util/dataType'
+import {
+  getExplore,
+  getOS
+} from './util/device'
+import {
+  randomColor,
+  randomNum,
+  randomString
+} from './util/random'
 
-// 工具包
-var utils = [
-  calculate,
-  dataType,
-  device,
-  random
-];
-// 工具方法
-var tools = {};
+var tools = {
+  floatAdd,
+  floatSub,
+  floatMul,
+  floatDiv,
+  isObject,
+  isPlainObject,
+  isEmptyObject,
+  getExplore,
+  getOS,
+  randomColor,
+  randomNum,
+  randomString
+}
 
-utils.forEach(function (item) {
-  tools = Object.assign(tools, item);
-})
+// 在window对象上注册为全局函数
+function register () {
+  Object.keys(tools).forEach(function (item) {
+    window[item] = tools[item];
+  })
+}
 
-tools = Object.assign(tools, {
-  // 注册为全局方法
-  register: function () {
-    Object.keys(tools).forEach(function (item) {
-      window[item] = tools[item];
-    })
-  },
+export {
+  floatAdd,
+  floatSub,
+  floatMul,
+  floatDiv,
+  isObject,
+  isPlainObject,
+  isEmptyObject,
+  getExplore,
+  getOS,
+  randomColor,
+  randomNum,
+  randomString,
+  register
+}
+
+export default Object.assign(tools, {
   // 注册在Vue原型
   install: function (Vue) {
     Object.keys(tools).forEach(function (item) {
@@ -31,5 +65,3 @@ tools = Object.assign(tools, {
     })
   }
 })
-
-export default tools

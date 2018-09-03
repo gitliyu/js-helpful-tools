@@ -40,7 +40,7 @@ function getOS() {
   if (/win/i.test(appVersion) && /phone/i.test(userAgent)) return 'windowsPhone';
 }
 
-export default {
+export {
   getExplore,
   getOS
 }

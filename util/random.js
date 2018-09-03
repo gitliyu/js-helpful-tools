@@ -35,7 +35,7 @@ function randomString(len, charSet) {
   return randomString;
 }
 
-export default {
+export {
   randomColor,
   randomNum,
   randomString
