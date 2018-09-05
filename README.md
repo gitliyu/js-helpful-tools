@@ -7,7 +7,7 @@
 npm install js-helpful-tools
 ```
 
-现有的使用方法如下(待优化)
+现有的使用方法如下
 1. 直接调用
 ```javascript
 import { isObject } from 'js-helpful-tools'
@@ -31,24 +31,26 @@ Vue.use(tools);
 console.log(this.isObject({}));  // true
 ```
 
-### API文档(待优化，目前注释写的比较详细，需要考虑一下文档怎么写比较清晰)
+### API
 
-数据类型
+>方法介绍及使用可以点击查看详情
+
+数据类型相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/dataType.md))
 - **isObject** 判断变量是否为对象，包括数组
 - **isPlainObject** 判断变量是否为对象，不包括数组
 - **isEmptyObject** 判断变量是否为空对象
 
-浮点数计算
+计算相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/calculate.md))
 - **floatAdd** 加法
 - **floatSub** 减法
 - **floatMul** 乘法
 - **floatDiv** 除法
 
-设备
+设备相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/device.md))
 - **getExplore** 获取浏览器
 - **getOS** 获取操作系统
 
-随机方法
+随机方法(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/random.md))
 - **randomColor** 生成随机颜色
 - **randomNumber** 生成随机数字
 - **randomString** 生成随机字符串
