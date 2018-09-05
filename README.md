@@ -55,4 +55,7 @@ console.log(this.isObject({}));  // true
 - **randomNumber** 生成随机数字
 - **randomString** 生成随机字符串
 
+页面布局相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/layout.md))
+- **isScrollBottom** 是否滚动到底部
+
 > 未完待续

@@ -18,6 +18,7 @@ import {
   randomNum,
   randomString
 } from './util/random'
+import { isScrollBottom } from './util/layout'
 
 var tools = {
   floatAdd,
@@ -31,7 +32,8 @@ var tools = {
   getOS,
   randomColor,
   randomNum,
-  randomString
+  randomString,
+  isScrollBottom
 }
 
 // 在window对象上注册为全局函数
@@ -54,6 +56,7 @@ export {
   randomColor,
   randomNum,
   randomString,
+  isScrollBottom,
   register
 }
 
