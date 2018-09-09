@@ -49,6 +49,7 @@ console.log(this.isObject({}));  // true
 设备相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/device.md))
 - **getExplore** 获取浏览器
 - **getOS** 获取操作系统
+- **isMobile** 判断是否为移动端
 
 随机方法(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/random.md))
 - **randomColor** 生成随机颜色

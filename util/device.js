@@ -40,7 +40,18 @@ function getOS() {
   if (/win/i.test(appVersion) && /phone/i.test(userAgent)) return 'windowsPhone';
 }
 
+/*
+* desc: 判断是否为移动端
+* params: null
+* return: { Boolean } 移动端返回true，否则返回false
+* */
+function isMobile() {
+	var os = getOS();
+	return os === 'ios' || os === 'android' || os === 'windowsPhone';
+}
+
 export {
   getExplore,
-  getOS
+  getOS,
+  isMobile
 }

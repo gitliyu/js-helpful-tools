@@ -10,9 +10,18 @@ getExplore(); // 'Chrome'
 ````
 #### getOS
 - **desc**: 获取操作系统
-- **params**: 变量
+- **params**: null
 - **return**: { String } 'MacOSX' 'windows' 'linux' 'ios' 'android' 'windowsPhone'
 
 ```javascript
-getOS({});    // 'windows'
+getOS();    // 'windows'
+````
+
+#### isMobile
+- **desc**: 判断是否为移动端
+- **params**: null
+- **return**: { Boolean } 移动端返回true，否则返回false
+
+```javascript
+isMobile();    // false
 ````

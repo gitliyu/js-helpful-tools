@@ -11,7 +11,8 @@ import {
 } from './util/dataType'
 import {
   getExplore,
-  getOS
+  getOS,
+  isMobile
 } from './util/device'
 import {
   randomColor,
@@ -30,6 +31,7 @@ var tools = {
   isEmptyObject,
   getExplore,
   getOS,
+  isMobile,
   randomColor,
   randomNum,
   randomString,
@@ -53,6 +55,7 @@ export {
   isEmptyObject,
   getExplore,
   getOS,
+  isMobile,
   randomColor,
   randomNum,
   randomString,
