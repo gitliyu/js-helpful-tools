@@ -48,10 +48,28 @@ function toNumber (val) {
   return isNaN(num) ? val : num;
 }
 
+/*
+* desc: 选择对象属性，生成新对象
+* params: 
+*	obj { Object } 需要处理的对象
+*   keys { String || Array } 选择的键值
+* return: { Object } 由所选键值对组成的新对象
+* */
+function selectObj (obj, keys){
+  obj = obj || {};
+  if ('string' == typeof keys) keys = keys.split(/ +/);
+  return keys.reduce(function(ret, key){
+    if (null == obj[key]) return ret;
+    ret[key] = obj[key];
+    return ret;
+  }, {});
+}
+
 export {
   isObject,
   isPlainObject,
   isEmptyObject,
   toString,
-  toNumber
+  toNumber,
+  selectObj
 }

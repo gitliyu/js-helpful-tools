@@ -51,3 +51,22 @@ toString(3.14);  		// '3.14'
 toNumber({});		// {}
 toNumber('3.14');  	// 3.14
 ````
+
+#### selectObj
+- **desc**: 选择对象属性，生成新对象
+- **params**: 
+     - obj { Object } 需要处理的对象
+     - keys { String || Array } 选择的键值
+- **return**: { Object } 由所选键值对组成的新对象
+
+```javascript
+var obj = { 
+  id: 1, 
+  name: 'xiaoming', 
+  mobile: '13512341234', 
+  password: 'fad55as' 
+}
+
+console.log(selectObj(obj, 'name mobile')); // { name: '13512341234', password: 'fad55as' }
+console.log(selectObj(obj, ['name', 'mobile']));
+````

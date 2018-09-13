@@ -35,12 +35,13 @@ console.log(this.isObject({}));  // true
 
 >方法介绍及使用可以点击查看详情
 
-数据类型相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/dataType.md))
+数据相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/data.md))
 - **isObject** 判断变量是否为对象，包括数组
 - **isPlainObject** 判断变量是否为对象，不包括数组
 - **isEmptyObject** 判断变量是否为空对象
 - **toString** 转字符串类型
 - **toNumber** 转数字类型
+- **selectObj** 选择对象属性，生成新对象
 
 计算相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/calculate.md))
 - **floatAdd** 加法

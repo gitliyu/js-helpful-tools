@@ -9,8 +9,9 @@ import {
   isPlainObject,
   isEmptyObject,
   toString,
-  toNumber
-} from './util/dataType'
+  toNumber,
+  selectObj
+} from './util/data'
 import {
   getExplore,
   getOS,
@@ -33,6 +34,7 @@ var tools = {
   isEmptyObject,
   toString,
   toNumber,
+  selectObj,
   getExplore,
   getOS,
   isMobile,
@@ -59,6 +61,7 @@ export {
   isEmptyObject,
   toString,
   toNumber,
+  selectObj,
   getExplore,
   getOS,
   isMobile,
