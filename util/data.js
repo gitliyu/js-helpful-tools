@@ -3,7 +3,7 @@
 * params: 变量
 * return: { Boolean } 是对象时返回true，否则返回false
 * */
-function isObject (obj){
+export function isObject (obj){
   return obj && typeof obj === 'object'
 }
 
@@ -12,7 +12,7 @@ function isObject (obj){
  * params: 变量
  * return: { Boolean } 是对象时返回true，否则返回false
  * */
-function isPlainObject (obj) {
+export function isPlainObject (obj) {
   return Object.prototype.toString.call(obj) === '[object Object]'
 }
 
@@ -21,7 +21,7 @@ function isPlainObject (obj) {
 * params: 变量
 * return: { Boolean } 是空对象时返回true，否则返回false
 * */
-function isEmptyObject (obj) {
+export function isEmptyObject (obj) {
   return isObject(obj) ? JSON.stringify(obj) === '{}' : false;
 }
 
@@ -30,7 +30,7 @@ function isEmptyObject (obj) {
 * params: 变量
 * return: { String } 转换后的字符串
 * */
-function toString (val) {
+export function toString (val) {
   return val == null
     ? ''
     : typeof val === 'object'
@@ -43,7 +43,7 @@ function toString (val) {
 * params: 变量
 * return: { Number } 转换后的数字或者原值
 * */
-function toNumber (val) {
+export function toNumber (val) {
   var num = parseFloat(val)
   return isNaN(num) ? val : num;
 }
@@ -55,7 +55,7 @@ function toNumber (val) {
 *   keys { String || Array } 选择的键值
 * return: { Object } 由所选键值对组成的新对象
 * */
-function selectObj (obj, keys){
+export function selectObj (obj, keys){
   obj = obj || {};
   if ('string' == typeof keys) keys = keys.split(/ +/);
   return keys.reduce(function(ret, key){
@@ -63,13 +63,4 @@ function selectObj (obj, keys){
     ret[key] = obj[key];
     return ret;
   }, {});
-}
-
-export {
-  isObject,
-  isPlainObject,
-  isEmptyObject,
-  toString,
-  toNumber,
-  selectObj
 }

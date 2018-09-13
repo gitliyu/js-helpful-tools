@@ -3,7 +3,7 @@
  * params: null
  * return: { String } IE EDGE Firefox Chrome Opera Safari Unkonwn
  * */
-function getExplore () {
+export function getExplore () {
   var sys = {},
       ua = navigator.userAgent.toLowerCase(),
       s;
@@ -29,7 +29,7 @@ function getExplore () {
 * params: null
 * return: { String } MacOSX windows linux ios android windowsPhone
 * */
-function getOS() {
+export function getOS() {
   var userAgent = navigator.userAgent.toLowerCase() || '';
   var appVersion = navigator.appVersion.toLowerCase() || '';
   if (/mac/i.test(appVersion)) return 'MacOSX';
@@ -45,13 +45,7 @@ function getOS() {
 * params: null
 * return: { Boolean } 移动端返回true，否则返回false
 * */
-function isMobile() {
+export function isMobile() {
 	var os = getOS();
 	return os === 'ios' || os === 'android' || os === 'windowsPhone';
-}
-
-export {
-  getExplore,
-  getOS,
-  isMobile
 }

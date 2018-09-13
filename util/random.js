@@ -3,7 +3,7 @@
 * params: null
 * return: { String } 六位颜色代码
 * */
-function randomColor() {
+export function randomColor() {
   return '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);
 }
 
@@ -14,7 +14,7 @@ function randomColor() {
  *   max { Number } 数字上限
  * return: { Number } 范围内的随机整数
  * */
-function randomNum(min, max) {
+export function randomNum(min, max) {
   return Math.floor(min + Math.random() * (max - min));
 }
 
@@ -25,7 +25,7 @@ function randomNum(min, max) {
  *   charSet { String } 选取的随机字符串
  * return: { String } 生成的随机字符串
  * */
-function randomString(len, charSet) {
+export function randomString(len, charSet) {
   charSet = charSet || 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   var randomString = '';
   for (var i = 0; i < len; i++) {
@@ -33,10 +33,4 @@ function randomString(len, charSet) {
     randomString += charSet.substring(randomPoz,randomPoz+1);
   }
   return randomString;
-}
-
-export {
-  randomColor,
-  randomNum,
-  randomString
 }

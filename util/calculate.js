@@ -3,7 +3,7 @@
  * params: { Number } 被加数, 加数
  * return: { Number } arg1加arg2的精确结果
  * */
-function floatAdd (arg1, arg2) {
+export function floatAdd (arg1, arg2) {
   var r1, r2, m, c;
   try {
     r1 = arg1.toString().split(".")[1].length;
@@ -40,7 +40,7 @@ function floatAdd (arg1, arg2) {
  * params: { Number } 被减数, 减数
  * return: { Number } arg1减arg2的精确结果
  * */
-function floatSub (arg1, arg2) {
+export function floatSub (arg1, arg2) {
   var r1, r2, m, n;
   try {
     r1 = arg1.toString().split(".")[1].length;
@@ -64,7 +64,7 @@ function floatSub (arg1, arg2) {
  * params: { Number } 被乘数，乘数
  * return: { Number } arg1乘arg2的精确结果
  * */
-function floatMul (arg1, arg2) {
+export function floatMul (arg1, arg2) {
   var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
   try {
     m += s1.split(".")[1].length;
@@ -84,7 +84,7 @@ function floatMul (arg1, arg2) {
  * params: { Number } 被除数, 除数
  * return: { Number } arg1除以arg2的精确结果
  * */
-function floatDiv (arg1, arg2) {
+export function floatDiv (arg1, arg2) {
   var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
   try {
     m += s1.split(".")[1].length
@@ -95,11 +95,4 @@ function floatDiv (arg1, arg2) {
   } catch (e) {
   }
   return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, m)
-}
-
-export {
-  floatAdd,
-  floatSub,
-  floatMul,
-  floatDiv
 }
