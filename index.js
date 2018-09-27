@@ -10,7 +10,9 @@ import {
   isEmptyObject,
   toString,
   toNumber,
-  selectObj
+  selectObj,
+  trim,
+  removeTags
 } from './util/data'
 import {
   getExplore,
@@ -22,7 +24,10 @@ import {
   randomNum,
   randomString
 } from './util/random'
-import { isScrollBottom } from './util/layout'
+import {
+  isScrollBottom,
+  scrollToTop
+} from './util/layout'
 
 var tools = {
   floatAdd,
@@ -35,13 +40,16 @@ var tools = {
   toString,
   toNumber,
   selectObj,
+  trim,
+  removeTags,
   getExplore,
   getOS,
   isMobile,
   randomColor,
   randomNum,
   randomString,
-  isScrollBottom
+  isScrollBottom,
+  scrollToTop
 }
 
 // 在window对象上注册为全局函数
@@ -62,6 +70,8 @@ export {
   toString,
   toNumber,
   selectObj,
+  trim,
+  removeTags,
   getExplore,
   getOS,
   isMobile,
@@ -69,6 +79,7 @@ export {
   randomNum,
   randomString,
   isScrollBottom,
+  scrollToTop,
   register
 }
 

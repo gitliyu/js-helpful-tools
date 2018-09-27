@@ -1,4 +1,4 @@
-### dataType 数据类型相关
+### data 数据相关
 
 #### isObject
 - **desc**: 判断变量为对象，包括数组
@@ -69,4 +69,22 @@ var obj = {
 
 console.log(selectObj(obj, 'name mobile')); // { name: '13512341234', password: 'fad55as' }
 console.log(selectObj(obj, ['name', 'mobile']));
+````
+
+#### trim
+- **desc**: 删除字符串所有空格
+- **params**: 字符串变量
+- **return**: 删除空格后的字符串变量
+
+```javascript
+trim('  1 3   d');		// '13d'
+````
+
+#### removeTags
+- **desc**: 删除字符串中的html标签
+- **params**: 字符串变量
+- **return**: 删除标签后的纯文本
+
+```javascript
+removeTags('<div>hi</div>');		// 'hi'
 ````

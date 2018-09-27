@@ -1,3 +1,4 @@
+// 对象
 /*
 * desc: 判断变量为对象，包括数组
 * params: 变量
@@ -63,4 +64,23 @@ export function selectObj (obj, keys){
     ret[key] = obj[key];
     return ret;
   }, {});
+}
+
+// 字符串
+/*
+ * desc: 删除字符串所有空格
+ * params: { String } 字符串变量
+ * return: { String } 删除空格后的字符串变量
+ * */
+export function trim (str) {
+  return str ? str.replace(/\s*/g,"") : '';
+}
+
+/*
+ * desc: 删除字符串中的html标签
+ * params: { String } 字符串变量
+ * return: { String } 删除标签后的纯文本
+ * */
+export function removeTags(str){
+  return str.replace(/<[^>]*>/g, '');
 }

@@ -42,6 +42,8 @@ console.log(this.isObject({}));  // true
 - **toString** 转字符串类型
 - **toNumber** 转数字类型
 - **selectObj** 选择对象属性，生成新对象
+- **trim** 删除字符串所有空格
+- **removeTags** 删除字符串中的html标签
 
 计算相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/calculate.md))
 - **floatAdd** 加法
@@ -61,5 +63,6 @@ console.log(this.isObject({}));  // true
 
 页面布局相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/layout.md))
 - **isScrollBottom** 是否滚动到底部
+- **scrollToTop** 滚动到页面顶部
 
 > 未完待续

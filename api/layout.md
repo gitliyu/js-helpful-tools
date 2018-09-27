@@ -9,3 +9,8 @@
 isScrollBottom($(body)); // true
 isScrollBottom(this.$refs.scrollWrapper); // false
 ````
+
+#### scrollToTop
+- **desc**: 滚动到页面顶部
+- **params**: null
+- **return**: null
