@@ -12,7 +12,8 @@ import {
   toNumber,
   selectObj,
   trim,
-  removeTags
+  removeTags,
+  commasNumber
 } from './util/data'
 import {
   getExplore,
@@ -42,6 +43,7 @@ var tools = {
   selectObj,
   trim,
   removeTags,
+  commasNumber,
   getExplore,
   getOS,
   isMobile,
@@ -72,6 +74,7 @@ export {
   selectObj,
   trim,
   removeTags,
+  commasNumber,
   getExplore,
   getOS,
   isMobile,

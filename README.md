@@ -44,6 +44,7 @@ console.log(this.isObject({}));  // true
 - **selectObj** 选择对象属性，生成新对象
 - **trim** 删除字符串所有空格
 - **removeTags** 删除字符串中的html标签
+- **commasNumber** 将数字转换为逗号隔开的字符串
 
 计算相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/calculate.md))
 - **floatAdd** 加法

@@ -84,3 +84,12 @@ export function trim (str) {
 export function removeTags(str){
   return str.replace(/<[^>]*>/g, '');
 }
+
+/*
+ * desc: 将数字转换为逗号隔开的字符串
+ * params: { Number } 数字变量
+ * return: { String } 逗号隔开的字符串
+ * */
+export function commasNumber(num) {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')  
+}

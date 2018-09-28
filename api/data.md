@@ -73,8 +73,8 @@ console.log(selectObj(obj, ['name', 'mobile']));
 
 #### trim
 - **desc**: 删除字符串所有空格
-- **params**: 字符串变量
-- **return**: 删除空格后的字符串变量
+- **params**: { String } 字符串变量
+- **return**: { String } 删除空格后的字符串变量
 
 ```javascript
 trim('  1 3   d');		// '13d'
@@ -82,9 +82,18 @@ trim('  1 3   d');		// '13d'
 
 #### removeTags
 - **desc**: 删除字符串中的html标签
-- **params**: 字符串变量
-- **return**: 删除标签后的纯文本
+- **params**: { String } 字符串变量
+- **return**: { String } 删除标签后的纯文本
 
 ```javascript
 removeTags('<div>hi</div>');		// 'hi'
+````
+
+#### commasNumber
+- **desc**: 将数字转换为逗号隔开的字符串
+- **params**: { Number } 数字变量
+- **return**: { String } 逗号隔开的字符串
+
+```javascript
+commasNumber(441233412);		// '441,233,412'
 ````
