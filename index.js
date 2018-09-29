@@ -29,6 +29,12 @@ import {
   isScrollBottom,
   scrollToTop
 } from './util/layout'
+import {
+  isEmail,
+  isIdCard,
+  isPhone,
+  isUrl
+} from './util/regexp'
 
 var tools = {
   floatAdd,
@@ -51,7 +57,11 @@ var tools = {
   randomNum,
   randomString,
   isScrollBottom,
-  scrollToTop
+  scrollToTop,
+  isEmail,
+  isIdCard,
+  isPhone,
+  isUrl
 }
 
 // 在window对象上注册为全局函数
@@ -83,6 +93,10 @@ export {
   randomString,
   isScrollBottom,
   scrollToTop,
+  isEmail,
+  isIdCard,
+  isPhone,
+  isUrl,
   register
 }
 

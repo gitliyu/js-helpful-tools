@@ -46,12 +46,6 @@ console.log(this.isObject({}));  // true
 - **removeTags** 删除字符串中的html标签
 - **commasNumber** 将数字转换为逗号隔开的字符串
 
-计算相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/calculate.md))
-- **floatAdd** 加法
-- **floatSub** 减法
-- **floatMul** 乘法
-- **floatDiv** 除法
-
 设备相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/device.md))
 - **getExplore** 获取浏览器
 - **getOS** 获取操作系统
@@ -65,5 +59,17 @@ console.log(this.isObject({}));  // true
 页面布局相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/layout.md))
 - **isScrollBottom** 是否滚动到底部
 - **scrollToTop** 滚动到页面顶部
+
+正则相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/regexp.md))
+- **isEmail** 判断是否为邮箱地址
+- **isIdCard** 判断是否为身份证号
+- **isPhone** 判断是否为手机号
+- **isUrl** 判断是否为URL地址
+
+计算相关(['点击查看详情'](https://github.com/gitliyu/js-helpful-tools/blob/master/api/calculate.md))
+- **floatAdd** 浮点数加法
+- **floatSub** 浮点数减法
+- **floatMul** 浮点数乘法
+- **floatDiv** 浮点数除法
 
 > 未完待续
