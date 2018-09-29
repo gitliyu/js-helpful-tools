@@ -14,14 +14,17 @@ import { isObject } from 'js-helpful-tools'
 
 console.log(isObject({}));   // true
 ```
-2. 注册为全局方法, 调用`register`方法后会将所有工具函数注册在`window`对象上
+2. 注册为全局方法, 调用`register`方法后会将所有工具函数注册在`window`对象上，也可以通过传参的方式注册在对应的对象上
 ```javascript
 import { register } from 'js-helpful-tools'
 
 register();
 console.log(isObject({}));   // true
+// or
+register('tools');
+console.log(tools.isObject({}));   // true
 ```
-3. 注册在Vue对象上
+3. 注册在`Vue`原型上，或者通过传参的方式整体注册在`Vue`原型上
 ```javascript
 import tools from 'js-helpful-tools'
 
@@ -29,6 +32,11 @@ Vue.use(tools);
 
 // 组件内部调用
 console.log(this.isObject({}));  // true
+
+// or
+Vue.use(tools, 'tools');
+
+console.log(this.$tools.isObject({}));  // true
 ```
 
 ### API

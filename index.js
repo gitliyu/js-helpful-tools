@@ -65,9 +65,13 @@ var tools = {
 }
 
 // 在window对象上注册为全局函数
-function register () {
+function register (key) {
   Object.keys(tools).forEach(function (item) {
-    window[item] = tools[item];
+  	if(key){
+  		window[key][item] = tools[item];
+  	} else {
+  		window[item] = tools[item];
+  	}
   })
 }
 
@@ -102,9 +106,13 @@ export {
 
 export default Object.assign(tools, {
   // 注册在Vue原型
-  install: function (Vue) {
+  install: function (Vue, key) {
     Object.keys(tools).forEach(function (item) {
-      Vue.prototype[item] = tools[item];
+    	if (key) {
+    		Vue.prototype['$' + key][item] = tools[item];
+    	} else {
+			Vue.prototype[item] = tools[item];
+    	}
     })
   }
 })
