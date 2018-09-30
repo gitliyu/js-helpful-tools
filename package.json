@@ -1,6 +1,6 @@
 {
   "name": "js-helpful-tools",
-  "version": "2.0.1",
+  "version": "1.2.1",
   "description": "some js heplful tools",
   "main": "index.js",
   "scripts": {
